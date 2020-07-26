@@ -7,10 +7,12 @@ import datetime
 current_time = datetime.datetime.now().time()
 current_hour = str(datetime.datetime.now().time())[:-13]
 print(f"The current time is {current_time}")
-current_hour = '05'
+#current_hour = '05'
 
-user_location = "Bad Vilbel"
-user_location_parsed = "bad+vilbel"
+#user_location = "Bad Vilbel"
+#user_location_parsed = "bad+vilbel"
+user_location = input("Please enter your city:> ")
+user_location_parsed = user_location.replace(" ", "+")
 
 print(f"The weather in {user_location}:")
 
@@ -54,8 +56,9 @@ else:
 
 skip_value = 12
 init_pos = init_pos + (n * skip_value)
-print(current_hour)
-print(f"current_hour_dislpay:> {current_hour_display}")
+
+#print(current_hour)
+#print(f"current_hour_dislpay:> {current_hour_display}")
 # make current_hour_display loop over at 24:00
 # idk yet how lul
 
